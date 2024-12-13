@@ -1,0 +1,22 @@
+@if (!peliculas) {
+    <img src="loading.gif">
+  }
+  @else if (peliculas?.length === 0) {
+    <h2> NO HAY DATOS</h2>
+  }
+  @else {
+    @for (pelicula of peliculas; track $index) {
+      <div class="contenedor-peliculas">
+        <div style="display: flex; flex-direction: row; gap: 10px;">
+          <div>
+            <img [src]="pelicula.image" width="169" height="250">
+          </div>
+          <div>
+            <h3>TITULO: {{pelicula.titulo}}</h3>
+            <h4>FECHA: {{pelicula.fecha | date:"dd/MMMM/YY"}}</h4>
+            <h3>PRECIO: {{pelicula.precio}}</h3>
+          </div>
+        </div>
+      </div>
+    }
+  }
