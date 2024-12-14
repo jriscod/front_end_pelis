@@ -1,6 +1,4 @@
-import { DatePipe, NgIf, NgOptimizedImage, UpperCasePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { ListadoPeliculasComponent } from './peliculas/listado-peliculas/listado-peliculas.component';
 
 @Component({
@@ -68,8 +66,8 @@ export class AppComponent implements OnInit{
           image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Avengers_endgame_logo.png/375px-Avengers_endgame_logo.png'
         }
         ];
-      }, 2000);
+      }, 100);
     }
 
-  
+    
 }
