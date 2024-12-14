@@ -16,7 +16,9 @@
             <h3>TITULO: {{pelicula.titulo}}</h3>
             <h4>FECHA: {{pelicula.fecha | date:"dd/MMMM/YY"}}</h4>
             <h3>PRECIO: {{pelicula.precio}}</h3>
-            <button mat-flat-button (click)="eliminarPelicula(pelicula)">Eliminar</button>
+            <button mat-fab (click)="eliminarPelicula(pelicula)">
+              <mat-icon>delete</mat-icon>
+            </button>
           </div>
         </div>
       </div>
