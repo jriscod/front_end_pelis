@@ -1,28 +1,27 @@
-<button (click)="agregarPelicula()">Agregar Pelicula</button>
+
 <app-listado-generico [listado]="peliculas">
 
   <ng-container contenido>
-    @for (pelicula of peliculas; track $index) {
-      <div class="contenedor-peliculas">
-        <div style="display: flex; flex-direction: row; gap: 10px;">
-          <div>
+    <div class="peliculas-contenedor">
+      @for (pelicula of peliculas; track $index) {
+        <div class="pelicula-contenedor">
+          <a>
             @if (pelicula.image) {
               <img [src]="pelicula.image" width="169" height="250">
             }@else {
-              <img src="default.jpg" alt="">
-            }         
-          </div>
+              <img src="default.jpg">
+            }
+          </a>
+          <p>
+            <a>{{pelicula.titulo}}</a>
+          </p>
           <div>
-            <h3>TITULO: {{pelicula.titulo}}</h3>
-            <h4>FECHA: {{pelicula.fecha | date:"dd/MMMM/YY"}}</h4>
-            <h3>PRECIO: {{pelicula.precio}}</h3>
-            <button mat-fab (click)="eliminarPelicula(pelicula)">
-              <mat-icon>delete</mat-icon>
-            </button>
+            <a mat-flat-button>Editar</a>
+            <button mat-flat-button type="button" color="warn">Borrar</button>
           </div>
         </div>
-      </div>
-    }
+      }
+    </div>
   </ng-container>
 </app-listado-generico>
    
