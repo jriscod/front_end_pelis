@@ -9,11 +9,10 @@ import { RouterLink } from '@angular/router';
 
 
 @Component({
-  selector: 'app-formulario-actores',
-  standalone: true,
-  imports: [MatButtonModule, RouterLink,MatFormFieldModule, ReactiveFormsModule,MatInputModule, MatDatepickerModule],
-  templateUrl: './formulario-actores.component.html',
-  styleUrl: './formulario-actores.component.css'
+    selector: 'app-formulario-actores',
+    imports: [MatButtonModule, RouterLink, MatFormFieldModule, ReactiveFormsModule, MatInputModule, MatDatepickerModule],
+    templateUrl: './formulario-actores.component.html',
+    styleUrl: './formulario-actores.component.css'
 })
 export class FormularioActoresComponent {
     private formBuilder = inject(FormBuilder);

@@ -8,11 +8,10 @@ import { MatInputModule } from '@angular/material/input';
 import { GeneroCreacionDTO, GeneroDTO } from '../generos';
 
 @Component({
-  selector: 'app-formulario-genero',
-  standalone: true,
-  imports: [MatButtonModule,RouterLink, MatFormFieldModule, ReactiveFormsModule, MatInputModule],
-  templateUrl: './formulario-genero.component.html',
-  styleUrl: './formulario-genero.component.css'
+    selector: 'app-formulario-genero',
+    imports: [MatButtonModule, RouterLink, MatFormFieldModule, ReactiveFormsModule, MatInputModule],
+    templateUrl: './formulario-genero.component.html',
+    styleUrl: './formulario-genero.component.css'
 })
 export class FormularioGeneroComponent implements OnInit{
 

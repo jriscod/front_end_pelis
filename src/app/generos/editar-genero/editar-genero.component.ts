@@ -3,11 +3,10 @@ import { FormularioGeneroComponent } from "../formulario-genero/formulario-gener
 import { GeneroCreacionDTO, GeneroDTO } from '../generos';
 
 @Component({
-  selector: 'app-editar-genero',
-  standalone: true,
-  imports: [FormularioGeneroComponent],
-  templateUrl: './editar-genero.component.html',
-  styleUrl: './editar-genero.component.css'
+    selector: 'app-editar-genero',
+    imports: [FormularioGeneroComponent],
+    templateUrl: './editar-genero.component.html',
+    styleUrl: './editar-genero.component.css'
 })
 export class EditarGeneroComponent {
   @Input({transform: numberAttribute})

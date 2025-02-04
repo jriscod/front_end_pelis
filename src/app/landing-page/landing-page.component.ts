@@ -4,11 +4,10 @@ import { ListadoPeliculasComponent } from "../peliculas/listado-peliculas/listad
 import { ListadoGenericoComponent } from '../compartidos/componentes/listado-generico/listado-generico.component';
 
 @Component({
-  selector: 'app-landing-page',
-  standalone: true,
-  imports: [RatingComponent, ListadoPeliculasComponent, ListadoGenericoComponent],
-  templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.css'
+    selector: 'app-landing-page',
+    imports: [RatingComponent, ListadoPeliculasComponent, ListadoGenericoComponent],
+    templateUrl: './landing-page.component.html',
+    styleUrl: './landing-page.component.css'
 })
 export class LandingPageComponent implements OnInit{
   peliculasenCine!: any[];

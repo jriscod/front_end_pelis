@@ -7,11 +7,10 @@ import {MatCardModule} from '@angular/material/card';
 
 
 @Component({
-  selector: 'app-listado-peliculas',
-  standalone: true,
-  imports: [DatePipe, ListadoGenericoComponent, ListadoGenericoComponent, MatButtonModule, MatIconModule, MatCardModule],
-  templateUrl: './listado-peliculas.component.html',
-  styleUrl: './listado-peliculas.component.css'
+    selector: 'app-listado-peliculas',
+    imports: [DatePipe, ListadoGenericoComponent, ListadoGenericoComponent, MatButtonModule, MatIconModule, MatCardModule],
+    templateUrl: './listado-peliculas.component.html',
+    styleUrl: './listado-peliculas.component.css'
 })
 export class ListadoPeliculasComponent implements OnInit{
   ngOnInit(): void {
